@@ -70,10 +70,89 @@ html, body {
 @quaternary: #eeeeee; //less off-white
 
 	//fonts
-@ubuntu: font-family: 'Ubuntu', sans-serif;
-@heebo: font-family: 'Heebo', sans-serif;
-@nstc: font-family: 'Noto Sans TC', sans-serif;
+@heebo: 'Heebo', sans-serif;
+@nstc: 'Noto Sans TC', sans-serif;
 
 //END VARIABLES
+//MIXINS
+.flex(){
+	display: flex;
+}
 
 
+//END MIXINS
+
+.container {
+	margin: 0 auto;
+	font-family: @heebo;
+}
+
+header{
+	
+	nav {
+		.flex();
+		justify-content: space-between;
+		align-items: center;
+		padding: 1%;
+		margin: 1%;
+		width: 25%;
+		
+		.links {
+			color: @primary;
+			text-decoration: none;
+			font-size: 1.2rem;
+		}
+
+		.links:hover {
+			animation-name: bg;
+			animation-duration: 750ms;
+			animation-fill-mode: forwards;
+			border: 1px solid white;
+			border-radius: 10px;
+		}
+	}
+
+	@keyframes bg {
+		100% {
+			color: @quaternary;
+		}
+	}
+
+	.header-class {
+
+		.non-img-head {
+			.flex();
+			flex-direction: column;
+
+			h1 {
+				font-size: 3.5rem;
+			}
+
+			h2 {
+				font-size: 1.75rem;
+			}
+		}
+	}
+}
+
+.experience {
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	ul li {
+
+	}
+}
+
+.skills {
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	h4 {
+
+	}
+}

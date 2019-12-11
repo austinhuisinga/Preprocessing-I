@@ -155,6 +155,48 @@ body {
   font-display: swap;
   src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
 }
-@ubuntu : font-family: 'Ubuntu', sans-serif;
-@heebo : font-family: 'Heebo', sans-serif;
-@nstc : font-family: 'Noto Sans TC', sans-serif;
+.container {
+  margin: 0 auto;
+  font-family: 'Heebo', sans-serif;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin: 1%;
+  width: 25%;
+}
+header nav .links {
+  color: #1089ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+header nav .links:hover {
+  animation-name: bg;
+  animation-duration: 750ms;
+  animation-fill-mode: forwards;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+@keyframes bg {
+  100% {
+    color: #eeeeee;
+  }
+}
+header .header-class .non-img-head {
+  display: flex;
+  flex-direction: column;
+}
+header .header-class .non-img-head h1 {
+  font-size: 3.5rem;
+}
+header .header-class .non-img-head h2 {
+  font-size: 1.75rem;
+}
+.experience h2 {
+  font-size: 1.75rem;
+}
+.skills h2 {
+  font-size: 1.75rem;
+}
