@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -165,7 +161,7 @@ header nav {
   align-items: center;
   padding: 1%;
   margin: 1%;
-  width: 25%;
+  width: 40%;
 }
 header nav .links {
   color: #1089ff;
@@ -184,19 +180,79 @@ header nav .links:hover {
     color: #eeeeee;
   }
 }
-header .header-class .non-img-head {
+header .header-class {
+  margin: 0 3%;
+  padding: 2%;
+  background: #e5e5e5;
   display: flex;
   flex-direction: column;
 }
-header .header-class .non-img-head h1 {
-  font-size: 3.5rem;
+header .header-class h1 {
+  font-size: 4rem;
 }
-header .header-class .non-img-head h2 {
+header .header-class h1 .bold {
+  font-weight: bold;
+}
+header .header-class h3 {
+  font-size: 1.5rem;
+}
+.education {
+  margin: 0 3%;
+}
+.education .s-d {
+  display: flex;
+}
+.education .s-d div {
+  display: flex;
+  flex-direction: column;
+}
+.education .s-d .school {
+  width: 45%;
+}
+.education .s-d .date {
+  width: 45%;
+  align-items: flex-end;
+}
+.education h2 {
   font-size: 1.75rem;
+}
+.education h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.experience {
+  margin: 0 3%;
+}
+.experience .t-e-d {
+  display: flex;
+}
+.experience .t-e-d div {
+  display: flex;
+  flex-direction: column;
+}
+.experience .t-e-d .title-employer {
+  width: 45%;
+}
+.experience .t-e-d .date {
+  width: 45%;
+  align-items: flex-end;
 }
 .experience h2 {
   font-size: 1.75rem;
 }
+.experience .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.experience .employer {
+  font-size: 1.1rem;
+}
+.skills {
+  margin: 0 3%;
+}
 .skills h2 {
   font-size: 1.75rem;
+}
+.skills h4 {
+  font-size: 1.2rem;
 }

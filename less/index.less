@@ -32,9 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -95,7 +93,7 @@ header{
 		align-items: center;
 		padding: 1%;
 		margin: 1%;
-		width: 25%;
+		width: 40%;
 		
 		.links {
 			color: @primary;
@@ -119,40 +117,104 @@ header{
 	}
 
 	.header-class {
+		margin: 0 3%;
+		padding: 2%;
+		background: @tertiary;
+		.flex();
+		flex-direction: column;
 
-		.non-img-head {
-			.flex();
-			flex-direction: column;
+		h1 {
+			font-size: 4rem;
 
-			h1 {
-				font-size: 3.5rem;
+			.bold {
+				font-weight: bold;
 			}
+		}
 
-			h2 {
-				font-size: 1.75rem;
-			}
+		h3 {
+			font-size: 1.5rem;
 		}
 	}
 }
 
-.experience {
+//education
+.education {
+	margin: 0 3%;
 
-	h2 {
-		font-size: 1.75rem;
+	.s-d {
+		display: flex;
+		
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.school {
+			width: 45%;
+		}
+
+		.date {
+			width: 45%;
+			align-items: flex-end;
+		}
 	}
 
-	ul li {
-
-	}
-}
-
-.skills {
 
 	h2 {
 		font-size: 1.75rem;
 	}
 
 	h4 {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+}
 
+//experience
+.experience {
+	margin: 0 3%;
+
+	.t-e-d  {
+		display: flex;
+		
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.title-employer {
+			width: 45%;
+		}
+
+		.date {
+			width:45%;
+			align-items: flex-end;
+		}
+	}
+
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	.title {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.employer {
+		font-size: 1.1rem;
+	}
+}
+
+//skills
+.skills {
+	margin: 0 3%;
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	h4 {
+		font-size: 1.2rem;
 	}
 }
