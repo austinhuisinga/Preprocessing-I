@@ -163,6 +163,13 @@ header nav {
   margin: 1%;
   width: 35%;
 }
+@media (max-width: 500px) {
+  header nav {
+    width: 92%;
+    justify-content: space-between;
+    margin: 1% 4%;
+  }
+}
 header nav .links {
   color: #1089ff;
   text-decoration: none;
@@ -195,6 +202,11 @@ header .header-class h1 {
   color: #1089ff;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  header .header-class h1 {
+    font-size: 3.5rem;
+  }
+}
 header .header-class h3 {
   font-size: 1.5rem;
   padding: 1% 0;
@@ -211,6 +223,12 @@ header .header-class button {
   border: 1px solid #1089ff;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  header .header-class button {
+    padding: 2% 0;
+    width: 30%;
+  }
+}
 header .header-class button:hover {
   animation-name: connect;
   animation-duration: 600ms;
@@ -225,6 +243,11 @@ header .header-class button:hover {
 }
 .education {
   margin: 3%;
+}
+@media (max-width: 500px) {
+  .education .school-container {
+    padding: 0.5% 0;
+  }
 }
 .education .s-d {
   display: flex;
@@ -258,6 +281,11 @@ header .header-class button:hover {
 }
 .experience {
   margin: 3%;
+}
+@media (max-width: 500px) {
+  .experience .job-container {
+    padding: 0.5% 0;
+  }
 }
 .experience .t-e-d {
   display: flex;

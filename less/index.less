@@ -78,7 +78,6 @@ html, body {
 	flex-direction: column;
 }
 
-
 //END MIXINS
 
 .container {
@@ -95,6 +94,12 @@ header{
 		padding: 1%;
 		margin: 1%;
 		width: 35%;
+
+		@media(max-width: 500px) {
+			width: 92%;
+			justify-content: space-between;
+			margin: 1% 4%;
+		}
 		
 		.links {
 			color: @primary;
@@ -130,6 +135,10 @@ header{
 			font-size: 4rem;
 			color: @primary;
 			font-weight: bold;
+			
+			@media(max-width: 500px) {
+				font-size: 3.5rem;
+			}
 		}
 
 		h3 {
@@ -149,6 +158,11 @@ header{
 			margin: 1% 0 1% 1%;
 			border: 1px solid @primary;
 			border-radius: 10px;
+
+			@media(max-width: 500px) {
+				padding: 2% 0;
+				width: 30%;
+			}
 		}
 
 		button:hover {
@@ -170,6 +184,12 @@ header{
 //education
 .education {
 	margin: 3%;
+
+	.school-container {
+		@media(max-width: 500px) {
+			padding: .5% 0;
+		}
+	}
 
 	.s-d {
 		display: flex;
@@ -213,6 +233,12 @@ header{
 //experience
 .experience {
 	margin: 3%;
+
+	.job-container {
+		@media(max-width: 500px) {
+			padding: .5% 0;
+		}
+	}
 
 	.t-e-d  {
 		display: flex;
@@ -258,6 +284,8 @@ header{
 		font-size: 1.2rem;
 		font-weight: bold;
 	}
+
+
 }
 
 //skills
@@ -281,4 +309,8 @@ header{
 	h4 {
 		font-size: 1.2rem;
 	}
+
+
+
 }
+
