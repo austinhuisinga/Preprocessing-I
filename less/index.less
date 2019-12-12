@@ -73,22 +73,23 @@ html, body {
 
 //END VARIABLES
 //MIXINS
-.flex(){
+.flexColumn(){
 	display: flex;
+	flex-direction: column;
 }
 
 
 //END MIXINS
 
 .container {
-	margin: 0 auto;
 	font-family: @heebo;
+	color: @secondary;
 }
 
 header{
 	
 	nav {
-		.flex();
+		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 1%;
@@ -120,48 +121,69 @@ header{
 		margin: 0 3%;
 		padding: 2%;
 		background: @tertiary;
-		.flex();
-		flex-direction: column;
+		color: @secondary;
+		.flexColumn();
+		border-radius: 30px;
+		width: 60%;
 
 		h1 {
 			font-size: 4rem;
-
-			.bold {
-				font-weight: bold;
-			}
+			color: @primary;
+			font-weight: bold;
 		}
 
 		h3 {
 			font-size: 1.5rem;
+			padding: 1% 0;
+		}
+
+		p {
+			padding-bottom: 1%;
+			font-size: .9rem;
+		}
+
+		button {
+			width: 20%;
+			text-align: center;
 		}
 	}
 }
 
 //education
 .education {
-	margin: 0 3%;
+	margin: 3%;
 
 	.s-d {
 		display: flex;
+
 		
+		p {
+			font-size: .9rem;
+		}
+
 		div {
-			display: flex;
-			flex-direction: column;
+			.flexColumn();
 		}
 
 		.school {
-			width: 45%;
+			width: 49%;
+			padding: 1% 0 .5% 0;
 		}
 
 		.date {
-			width: 45%;
+			width: 49%;
 			align-items: flex-end;
+			justify-content: center;
 		}
 	}
 
+	.school-description {
+		padding-left: 2%;
+	}
 
 	h2 {
 		font-size: 1.75rem;
+		color: @primary;
 	}
 
 	h4 {
@@ -172,47 +194,71 @@ header{
 
 //experience
 .experience {
-	margin: 0 3%;
+	margin: 3%;
 
 	.t-e-d  {
 		display: flex;
+
+		p {
+			font-size: .9rem;
+		}
 		
 		div {
-			display: flex;
-			flex-direction: column;
+			.flexColumn();
 		}
 
 		.title-employer {
-			width: 45%;
+			width: 49%;
+			padding-top: 1%;
+
+			.employer {
+				padding: 1% 1% 0 1%;
+			}
 		}
 
 		.date {
-			width:45%;
+			width:49%;
 			align-items: flex-end;
+			justify-content: center;
 		}
 	}
 
+	.job-des-div {
+		padding: .5% 2%;
+
+		.job-description {
+			padding: .25% 0;
+		}
+	}
 
 	h2 {
 		font-size: 1.75rem;
+		color: @primary;
 	}
 
 	.title {
 		font-size: 1.2rem;
 		font-weight: bold;
 	}
-
-	.employer {
-		font-size: 1.1rem;
-	}
 }
 
 //skills
 .skills {
-	margin: 0 3%;
+	margin: 3%;
+	.flexColumn();
+
 	h2 {
 		font-size: 1.75rem;
+		color: @primary;
+		padding-bottom: 1%;
+	}		
+
+	.skills-list {
+		display: flex;
+		justify-content: space-evenly;
+		width: 96%;
 	}
+
 
 	h4 {
 		font-size: 1.2rem;
