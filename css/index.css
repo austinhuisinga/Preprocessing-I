@@ -1,1 +1,343 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Heebo'), local('Heebo-Regular'), url(https://fonts.gstatic.com/s/heebo/v5/NGS6v5_NC0k9P9H2TbQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Sans TC Regular'), local('NotoSansTC-Regular'), url(https://fonts.gstatic.com/s/notosanstc/v9/-nF7OG829Oofr2wohFbTp9i1OCEJ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+.container {
+  font-family: 'Heebo', sans-serif;
+  color: #23374d;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin: 1%;
+  width: 35%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 92%;
+    justify-content: space-between;
+    margin: 1% 4%;
+  }
+}
+header nav .links {
+  color: #1089ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+header nav .links:hover {
+  animation-name: bg;
+  animation-duration: 750ms;
+  animation-fill-mode: forwards;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+@keyframes bg {
+  100% {
+    color: #eeeeee;
+  }
+}
+header .header-class {
+  margin: 0 3%;
+  padding: 2% 2% 1% 2%;
+  background: #e5e5e5;
+  color: #23374d;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 94%;
+}
+header .header-class h1 {
+  font-size: 4rem;
+  color: #1089ff;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  header .header-class h1 {
+    font-size: 3.5rem;
+  }
+}
+header .header-class h3 {
+  font-size: 1.5rem;
+  padding: 1% 0;
+}
+header .header-class p {
+  padding-bottom: 1%;
+  font-size: 0.9rem;
+}
+header .header-class button {
+  width: 20%;
+  border: 1px solid black;
+  padding: 1% 5%;
+  margin: 1% 0 1% 1%;
+  border: 1px solid #1089ff;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  header .header-class button {
+    padding: 2% 0;
+    width: 30%;
+  }
+}
+header .header-class button:hover {
+  animation-name: connect;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+@keyframes connect {
+  100% {
+    color: #eeeeee;
+    background: #1089ff;
+    border: 1px solid #23374d;
+  }
+}
+.education {
+  margin: 3%;
+}
+@media (max-width: 500px) {
+  .education .school-container {
+    padding: 0.5% 0;
+  }
+}
+.education .s-d {
+  display: flex;
+}
+.education .s-d p {
+  font-size: 0.9rem;
+}
+.education .s-d div {
+  display: flex;
+  flex-direction: column;
+}
+.education .s-d .school {
+  width: 49%;
+  padding: 1% 0 0.5% 0;
+}
+.education .s-d .date {
+  width: 49%;
+  align-items: flex-end;
+  justify-content: center;
+}
+.education .school-description {
+  padding-left: 2%;
+}
+.education h2 {
+  font-size: 1.75rem;
+  color: #1089ff;
+}
+.education h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.experience {
+  margin: 3%;
+}
+@media (max-width: 500px) {
+  .experience .job-container {
+    padding: 0.5% 0;
+  }
+}
+.experience .t-e-d {
+  display: flex;
+}
+.experience .t-e-d p {
+  font-size: 0.9rem;
+}
+.experience .t-e-d div {
+  display: flex;
+  flex-direction: column;
+}
+.experience .t-e-d .title-employer {
+  width: 49%;
+  padding-top: 1%;
+}
+.experience .t-e-d .title-employer .employer {
+  padding: 1% 1% 0 1%;
+}
+.experience .t-e-d .date {
+  width: 49%;
+  align-items: flex-end;
+  justify-content: center;
+}
+.experience .job-des-div {
+  padding: 0.5% 2%;
+}
+.experience .job-des-div .job-description {
+  padding: 0.25% 0;
+}
+.experience h2 {
+  font-size: 1.75rem;
+  color: #1089ff;
+}
+.experience .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.skills {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+}
+.skills h2 {
+  font-size: 1.75rem;
+  color: #1089ff;
+  padding-bottom: 1%;
+}
+.skills .skills-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 96%;
+}
+.skills h4 {
+  font-size: 1.2rem;
+}
