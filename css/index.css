@@ -161,7 +161,7 @@ header nav {
   align-items: center;
   padding: 1%;
   margin: 1%;
-  width: 40%;
+  width: 35%;
 }
 header nav .links {
   color: #1089ff;
@@ -182,13 +182,13 @@ header nav .links:hover {
 }
 header .header-class {
   margin: 0 3%;
-  padding: 2%;
+  padding: 2% 2% 1% 2%;
   background: #e5e5e5;
   color: #23374d;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
-  width: 60%;
+  width: 94%;
 }
 header .header-class h1 {
   font-size: 4rem;
@@ -205,7 +205,23 @@ header .header-class p {
 }
 header .header-class button {
   width: 20%;
-  text-align: center;
+  border: 1px solid black;
+  padding: 1% 5%;
+  margin: 1% 0 1% 1%;
+  border: 1px solid #1089ff;
+  border-radius: 10px;
+}
+header .header-class button:hover {
+  animation-name: connect;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+@keyframes connect {
+  100% {
+    color: #eeeeee;
+    background: #1089ff;
+    border: 1px solid #23374d;
+  }
 }
 .education {
   margin: 3%;

@@ -94,7 +94,7 @@ header{
 		align-items: center;
 		padding: 1%;
 		margin: 1%;
-		width: 40%;
+		width: 35%;
 		
 		.links {
 			color: @primary;
@@ -119,12 +119,12 @@ header{
 
 	.header-class {
 		margin: 0 3%;
-		padding: 2%;
+		padding: 2% 2% 1% 2%;
 		background: @tertiary;
 		color: @secondary;
 		.flexColumn();
 		border-radius: 30px;
-		width: 60%;
+		width: 94%;
 
 		h1 {
 			font-size: 4rem;
@@ -144,7 +144,25 @@ header{
 
 		button {
 			width: 20%;
-			text-align: center;
+			border: 1px solid black;
+			padding: 1% 5%;
+			margin: 1% 0 1% 1%;
+			border: 1px solid @primary;
+			border-radius: 10px;
+		}
+
+		button:hover {
+			animation-name: connect;
+			animation-duration: 600ms;
+			animation-fill-mode: forwards;
+		}
+	}
+
+	@keyframes connect {
+		100% {
+			color: @quaternary;
+			background: @primary;
+			border: 1px solid @secondary;
 		}
 	}
 }
